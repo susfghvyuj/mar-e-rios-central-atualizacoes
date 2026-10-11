@@ -2,19 +2,21 @@
 
 Distribuição Windows da Central de cardápio e pedidos para retirada da Peixaria Mar & Rios, Xangri-lá / RS.
 
-[**Baixar o instalador mais recente**](https://github.com/susfghvyuj/mar-e-rios-central-atualizacoes/releases/latest/download/MarERiosCentral-Setup.exe)
+[**Baixar instalador**](https://github.com/susfghvyuj/mar-e-rios-central-atualizacoes/releases/latest/download/MarERiosCentral-Setup.exe) · [**Cardápio dos clientes**](https://mar-e-rios-retirada.mythicacorn4.chatgpt.site)
 
-Execute `MarERiosCentral-Setup.exe`. O instalador cria os atalhos **Mar & Rios Central** e preserva os dados existentes. Requer Windows 10/11 com .NET Framework 4.8 ou compatível. A Central é independente do aplicativo Caixa: tem executável e pasta de dados próprios.
+Execute MarERiosCentral-Setup.exe. Cria atalhos e preserva os dados. Requer Windows 10/11 e .NET Framework 4.8 ou compatível. É independente do aplicativo Caixa.
 
-Esta primeira versão funciona localmente no PC da loja. Permite cadastrar categorias, pratos, fotos, acompanhamentos e adicionais; lançar pedidos manualmente; acompanhar o preparo; imprimir comandas e registrar pagamento somente na retirada. O catálogo e os pedidos começam vazios. O cardápio público para clientes, o recebimento online e o bot de WhatsApp ainda são etapas futuras.
+A versão **1.1.0** conecta o cardápio à Central, recebe pedidos de retirada e atualiza o acompanhamento. Inclui **Em produção**, categorias, pratos, fotos, acompanhamentos, adicionais, comandas e pagamento na retirada. O catálogo começa vazio: a loja cadastra os pratos reais.
 
-Depois da instalação, o aplicativo busca atualizações automaticamente neste repositório, sem login ou token. Os instaladores são verificados por tamanho e SHA-256, e a atualização aguarda não haver pedido em edição. O programa usa `%LOCALAPPDATA%\MarERiosCentral` para os dados da loja. Configurações incluem exportação e importação de backup com fotos.
+Acesse [Acesso da loja](https://mar-e-rios-retirada.mythicacorn4.chatgpt.site/conectar) com a conta proprietária, gere a conexão e importe em **Configurações → Cardápio online**. Cadastre pratos e clique **Publicar cardápio**. Depois, mudanças sincronizam automaticamente. Mantenha uma Central aberta com internet; após 90 segundos sem comunicação, o site pausa novos pedidos. Somente retirada e pagamento na loja.
 
-As Releases contêm somente:
+Atualizações automáticas neste repositório, sem login ou token GitHub. Verifica tamanho e SHA-256, aguarda não haver edição ou sincronização e preserva %LOCALAPPDATA%/MarERiosCentral. Consulte LEIA-ME.md para conexão, impressora e backup.
 
-- `MarERiosCentral-Setup.exe`: instalador Windows.
-- `MarERiosCentral-Windows.zip`: versão portátil com instruções.
-- `update-manifest.json`: versão e integridade usadas pelo atualizador.
-- `SHA256SUMS.txt`: hashes SHA-256 dos arquivos.
+Releases contêm somente:
 
-O código-fonte permanece privado. Produtos, fotos cadastradas, clientes, pedidos e backups ficam no computador e não são publicados aqui. Os arquivos “Source code” gerados pelo GitHub contêm somente os documentos deste repositório de distribuição.
+- MarERiosCentral-Setup.exe: instalador.
+- MarERiosCentral-Windows.zip: versão portátil e instruções.
+- update-manifest.json: versão e integridade.
+- SHA256SUMS.txt: hashes.
+
+Código da Central e do site permanece privado. Clientes, pedidos, credenciais, pratos cadastrados e backups não são publicados no GitHub. O site hospedado recebe os dados necessários aos pedidos. Os arquivos Source code gerados pelo GitHub contêm somente documentos deste repositório de distribuição.
